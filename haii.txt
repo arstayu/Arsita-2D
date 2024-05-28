@@ -1,2 +1,15 @@
-#This is a comment.
-print("Hello, World!")
+# Definisikan kelas Mahasiswa
+class Mahasiswa:
+    def __init__(self, nama, kelas):
+        self.nama = nama
+        self.kelas = kelas
+
+    def tampilkan_info(self):
+        print(f'Nama Mahasiswa: {self.nama}')
+        print(f'Kelas: {self.kelas}')
+
+# Membuat objek Mahasiswa untuk Arsita Ayu Irmayanti dari kelas 2D
+mahasiswa1 = Mahasiswa('Arsita Ayu Irmayanti', '2D')
+
+# Menampilkan informasi tentang mahasiswa
+mahasiswa1.tampilkan_info()
